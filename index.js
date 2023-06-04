@@ -112,7 +112,7 @@ const textNodes = [
   },
   {
     id: 13,
-    text: "You and Merlin attend wizarding school together. He excels in potion brewing, and you excel at spells and combat. The two of you help each other and graduate as top of your class!",
+    text: "You and Merlin attend wizarding school together. He excels in potion brewing, and you excel at spells and combat. The two of you help each other and graduate top of your class!",
     options: [
       {
         text: "Restart",
@@ -122,11 +122,37 @@ const textNodes = [
   },
   {
     id: 14,
-    text: "You and Merlin talk about the magical world of fairies and leprechauns. He takes you to his cave backyard and you meet his 3 pet dragons. You become friends and he occasionally flies to your home to visit you."
+    text: "You and Merlin talk about the magical world of fairies and leprechauns. He takes you to his cave backyard to meet his 3 pet dragons. You become friends and he occasionally flies to your home to visit you."
     options: [
       {
         text: "Restart",
         nextText: 1
+      }
+    ]
+  },
+  {
+    id: 9,
+    text: "You sneak past the wizard and there are two paths in front of you. There is a room with a strange glow and an opening to the outside.",
+    options: [
+      {
+        text: "Go to the glowing room",
+        nextText: 15
+      },
+      {
+        text: "Go outside",
+        nextText: 16
+      }
+    ]
+  },
+  {
+    id:
+    text: 
+    options: [
+      {
+
+      },
+      {
+        
       }
     ]
   }
