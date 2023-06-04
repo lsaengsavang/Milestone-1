@@ -5,7 +5,7 @@ const choiceButtonsElement = document.getElementById('choice-buttons')
 
 // Starting game will display first prompt
 function startGame() {
-  showTextNode(0)
+  showTextNode(1)
 }
 
 // Shows the prompt
@@ -122,7 +122,7 @@ const textNodes = [
   },
   {
     id: 14,
-    text: "You and Merlin talk about the magical world of fairies and leprechauns. He takes you to his cave backyard to meet his 3 pet dragons. You become friends and he occasionally flies to your home to visit you."
+    text: "You and Merlin talk about the magical world of fairies and leprechauns. He takes you to his cave backyard to meet his 3 pet dragons. You become friends and he occasionally flies to your home to visit you.",
     options: [
       {
         text: "Restart",
@@ -145,14 +145,14 @@ const textNodes = [
     ]
   },
   {
-    id:
-    text: 
+    id: 15,
+    text: "",
     options: [
       {
 
       },
       {
-        
+
       }
     ]
   }
