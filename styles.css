@@ -11,13 +11,24 @@ body {
   height: 100vh;
 }
 
+header {
+  position: absolute;
+  top: 60px;
+  color: white;
+  font-family: Cinzel, Arial;
+}
+
+h4 {
+  text-align: center;
+  padding-top: 240px;
+}
+
 .container {
-  width: 1000px;
-  max-width: 85%;;
-  background-color: lightgrey;
+  width: 75vh;
+  background-color: rgb(75, 75, 75);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px 2px;
+  box-shadow: 0 0 10px 2px white;
   opacity: 0.8;
 }
 
@@ -38,4 +49,16 @@ button {
 button:hover {
   background-color: rgb(160, 160, 160);
   cursor: pointer;
+  color: white;
+}
+
+a {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 200px;
+  text-align:right;
+  padding-right: 30px;
+  font-size: 18px;
+  color: white;
 }

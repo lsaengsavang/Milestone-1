@@ -12,7 +12,7 @@ function showTextNode(textNodeIndex) {
   textElement.innerText = textNode.text
 }
 
-// Text prompts
+// Text prompts (1-37)
 const textNodes = [
   {
     id: 1,
