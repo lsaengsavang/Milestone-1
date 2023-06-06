@@ -1,29 +1,48 @@
 const textElement = document.getElementById('text')
 const choiceButtonsElement = document.getElementById('choice-buttons')
 
-// Starting game will display first prompt
+
 function startGame() {
   showTextNode(1)
 }
 
-// Shows the prompt
+// Shows the prompt 
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
   textElement.innerText = textNode.text
+
+// Clear existing buttons (Credit to Web Dev Simplified)
+  while (choiceButtonsElement.firstChild) {
+    choiceButtonsElement.removeChild(choiceButtonsElement.firstChild)
+  }
+
+// Create buttons for the current text node's options (Credit to Web Dev Simplified)
+  textNode.options.forEach(option => {
+    const button = document.createElement('button')
+    button.innerText = option.text
+    button.addEventListener('click', () => selectOption(option))
+    choiceButtonsElement.appendChild(button)
+  })
+}
+
+// Selecting choices
+function selectOption(option) {
+  const nextTextNodeId = option.nextText
+  showTextNode(nextTextNodeId)
 }
 
 // Text prompts (1-37)
 const textNodes = [
   {
     id: 1,
-    text: 'A huge wolf runs up to you!',
+    text: 'A huge wolf runs up to you! 🐺',
     options: [
       {
-        text: 'Run away',
+        text: 'Run away 🏃',
         nextText: 2
       },
       {
-        text: 'Try to pet it',
+        text: 'Try to pet it 🖐️',
         nextText: 3
       }
     ]
@@ -33,11 +52,11 @@ const textNodes = [
     text: 'You run down the hill until the dog stops chasing you, then you slow down. In an unfamiliar area, you look around to see an opening to a trail and an occupied tent with a live campfire outside of it.',
     options: [
       {
-        text: 'Go to the trail',
+        text: 'Go to the trail ⛰️',
         nextText: 4
       },
       {
-        text: 'Go to the tent',
+        text: 'Go to the tent 🏕️',
         nextText: 5
       }
     ]
@@ -47,11 +66,11 @@ const textNodes = [
     text: `The wolf licks your hand, and allows you to pet it. You notice he has a collar that reads "Spike". You call him by his name and he wags his tail excitedly. You walk around a lake and Spike follows you. You stop for a moment while Spike sniffs around, but wanders off.`,
     options: [
       {
-        text: 'Follow Spike',
+        text: 'Follow Spike 🐺',
         nextText: 6
       },
       {
-        text: 'Call Spike to come back',
+        text: 'Call Spike to come back 🗣️',
         nextText: 7
       }
     ]
@@ -457,6 +476,7 @@ const textNodes = [
     ]
   }
 ]
+
 
 // Begin!
 startGame()
