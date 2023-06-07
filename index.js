@@ -24,14 +24,14 @@ function showTextNode(textNodeIndex) {
     choiceButtonsElement.appendChild(button)
   })
 
-  // Display images
+// Display images, if the prompt has one
   if (textNode.image) {
     const imageElement = document.createElement('img');
     imageElement.src = textNode.image;
     choiceButtonsElement.parentNode.insertBefore(imageElement, choiceButtonsElement);
   } else {
 
-    // Clears image from the previous prompt
+// Clears image from the previous prompt
     const existingImage = document.querySelector('#text + img');
     if (existingImage) {
       existingImage.remove();
@@ -106,7 +106,7 @@ const textNodes = [
   },
   {
     id: 8,
-    text: "You approach the wizard, Merlin, and he welcomes you into his cave. He shares that he has been residing in the cave to practice his spells and potion brewing. He says he is making a special brew. He pour a glass and offers it to you. He promises that it is nothing bad.",
+    text: "You approach the wizard, Merlin, and he welcomes you into his cave. He shares that he has been residing in the cave to practice his spells and potion brewing. He says he is making a special brew. He pour a glass and offers it to you. He vaguely promises that it is nothing bad.",
     options: [
       {
         text: "Drink it 🍷",
@@ -120,7 +120,7 @@ const textNodes = [
   },
   {
     id: 11,
-    text: "You drink the mysterious potion. It tastes like a crisp glass of fresh apple juice. You feel your body tingling for a moment and you feel lighter. You start to levitate and fly! You thank the wizard for the potion and fly home. END",
+    text: "You drink the mysterious potion. It tastes like a crisp glass of fresh apple juice. You feel your body tingling for a moment and you feel lighter. You start to levitate and fly! You thank the wizard for the potion and fly home.",
     options: [
       {
         text: "Restart",
@@ -212,7 +212,7 @@ const textNodes = [
   },
   {
     id: 16,
-    text: "You walk outside, blinded by the bright sunlight. Your eyes adjust and you see 3 dragons in front of you! You scream.",
+    text: "You walk outside, blinded by the bright sunlight. Your eyes adjust and you see 3 dragons in front of you!",
     options: [
       {
         text: "Fight ⚔️",
@@ -410,7 +410,7 @@ const textNodes = [
   },
   {
     id: 7,
-    text: "Spike comes running back to you. You continue walking and find a small home. You knock on the door, and a leprechaun opens it! He invites you inside. His name is Albie, he just finished baking an apple pie. He shares a slice with you and he gives you a tour of his home. You see a room filled with a golden statues and gold coins.",
+    text: "Spike comes running back to you. You continue walking and find a small home. You knock on the door, and a leprechaun opens it! He invites you inside. His name is Albie, he just finished baking an apple pie. He shares a slice with you and he gives you a tour of his home. You see a room filled with a golden trophies and gold coins.",
     options: [
       {
         text: "Ask about the gold trophies 🏆",
