@@ -121,6 +121,7 @@ const textNodes = [
   {
     id: 11,
     text: "You drink the mysterious potion. It tastes like a crisp glass of fresh apple juice. You feel your body tingling for a moment and you feel lighter. You start to levitate and fly! You thank the wizard for the potion and fly home.",
+    image: "images/birds.png",
     options: [
       {
         text: "Restart",
@@ -167,11 +168,11 @@ const textNodes = [
     text: "You sneak past the wizard and there are two paths in front of you. There is a room with a strange glow and an opening to the outside.",
     options: [
       {
-        text: "Go to the glowing room",
+        text: "Go to the glowing room 🔅",
         nextText: 15
       },
       {
-        text: "Go outside",
+        text: "Go outside ⛰️",
         nextText: 16
       }
     ]
@@ -181,7 +182,7 @@ const textNodes = [
     text:  "You follow the glow to find a room full of glowing rose bushes and a patch of pumpkins. You observe the roses, touching the soft petals. You notice that they smell like apples. You pluck one from the ground to keep.",
     options: [
       {
-        text: "Stay ⭕",
+        text: "Stay 🌹",
         nextText: 17
       },
       {

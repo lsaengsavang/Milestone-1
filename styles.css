@@ -8,8 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vh;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header {
@@ -20,16 +19,17 @@ header {
 
 h3 {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .container {
-  width: 75vh;
+  width: 70vh;
   background-color: rgb(75, 75, 75);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px white;
-  opacity: 0.8;
+  opacity: 0.85;
+  margin: 0 auto;
 }
 
 .button-grid {
@@ -64,6 +64,27 @@ a {
   color: white;
 }
 
-.image {
-  height: 100px;
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+  }
+  h1 {
+    font-size: 50px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .button-grid {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+  
+  }
 }
