@@ -9,6 +9,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
+  cursor: url(images/sword-cursor.png), auto;
 }
 
 header {
@@ -64,7 +66,7 @@ a {
   color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 390px) {
   .container {
     padding: 10px;
     display: flex;
@@ -72,14 +74,16 @@ a {
     justify-content: center;
     align-items: center;
     width: 70vw;
+
   }
   h1 {
-    font-size: 50px;
-    padding-top: 10px;
+    font-size: 20px;
     text-align: center;
+    top: 20px;
   }
   h3 {
-    font-size: 30px;
+    font-size: 10px;
+    padding-top: 30px;
   }
   .button-grid {
     display: grid;
