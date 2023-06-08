@@ -1,9 +1,9 @@
 const textElement = document.getElementById('text')
 const choiceButtonsElement = document.getElementById('choice-buttons')
 
-
+// Starts game
 function startGame() {
-  showTextNode(1)
+  showTextNode(1);
 }
 
 // Shows the prompt 
@@ -24,10 +24,14 @@ function showTextNode(textNodeIndex) {
     choiceButtonsElement.appendChild(button)
   })
 
+  // Center the text
+  textElement.style.textAlign = 'center';
+
 // Display images, if the prompt has one
   if (textNode.image) {
     const imageElement = document.createElement('img');
     imageElement.src = textNode.image;
+    imageElement.style.margin = '0 auto';
     choiceButtonsElement.parentNode.insertBefore(imageElement, choiceButtonsElement);
   } else {
 
@@ -48,6 +52,7 @@ function selectOption(option) {
 // Text prompts (1-37)
 const textNodes = [
   {
+    // Only this prompt has an image, if I add to more prompts, they combine for some reason??
     id: 1,
     text: 'A huge wolf runs up to you! ',
     image: "images/wolf.png",
@@ -121,7 +126,6 @@ const textNodes = [
   {
     id: 11,
     text: "You drink the mysterious potion. It tastes like a crisp glass of fresh apple juice. You feel your body tingling for a moment and you feel lighter. You start to levitate and fly! You thank the wizard for the potion and fly home.",
-    image: "images/birds.png",
     options: [
       {
         text: "Restart",
