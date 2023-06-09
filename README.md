@@ -20,3 +20,6 @@ Instructions:
 4. You can restart the game and try different decisions!
 
 I hope you enjoy. Have fun!
+
+Click here to launch the game:
+https://lsaengsavang.github.io/Milestone-1/
