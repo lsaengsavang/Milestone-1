@@ -16,7 +16,7 @@ function showTextNode(textNodeIndex) {
     choiceButtonsElement.removeChild(choiceButtonsElement.firstChild)
   }
 
-// Create buttons for the current text node's options (Credit to Web Dev Simplified)
+// Create buttons for the current text node's options
   textNode.options.forEach(option => {
     const button = document.createElement('button')
     button.innerText = option.text
